@@ -8,13 +8,21 @@ import (
 func inc(a interface{}) interface{} {
 	switch t := a.(type) {
 	case int32:
-	case int64:	
+		return t +1
+	case int64:
+		return t +1
 	case int8:
+		return t +1
 	case byte:
+		return t +1
 	case int:
-	case uint16:	
+		return t +1
+	case uint16:
+		return t +1
 	case uint:
-	case float32:	
+		return t +1
+	case float32:
+		return t +1
 	case float64:
 		return t +1
 	default:

@@ -15,13 +15,9 @@ func add(a,b interface{}) (int, error) {
 }
 
 func main() {
-	i, err := add(1,2)
-	if err == nil {
-		fmt.Println(i)
-	}
-	i, err = add("a","b")
-	if err != nil {
-		fmt.Println(err)
-	}
+	i, _ := add(1,2)
+	fmt.Println(i)
+	_, err := add("a","b")
+	fmt.Println(err)
 	
 }
